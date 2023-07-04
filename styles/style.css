@@ -25,18 +25,24 @@ a {
 }
 
 .header {
-    height: 97px;
+    min-height: 97px;
     border: 1px solid blueviolet;
 }
 
 .main {
     display: flex;
+    /* background-image: url(../images/Fon.jpg);
+    background-repeat: repeat; */
 }
 
 .sidebar {
     width: 285px;
     min-height: 1080px;
     border: 1px solid green;
+}
+
+.button {
+    font-weight: 400;
 }
 
 button:hover {
@@ -46,7 +52,7 @@ button:hover {
 }
 
 .main__content {
-    width: 1640px;
+    width: 100%;
 }
 
 .container {
@@ -55,7 +61,7 @@ button:hover {
 }
 
 .menu__header {
-    height: 150px;
+    min-height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,21 +86,22 @@ button:hover {
     background-color: #FFFFFF;
     text-transform: uppercase;
     margin-right: 13px;
+    box-shadow: 2px 2px 5px 0px rgba(227, 184, 115, 0.30);
 }
 
 .menu__button-item:hover,
 .admin__button-white:hover,
-.admin__button-white-6:hover {
-    color: #FFF;
+.admin__button-white6:hover {
+    color: #FFFFFF;
 }
 
 .menu__button-red {
-    width: 201px;
+    min-width: 201px;
     height: 40px;
     border-radius: 6px;
     border: 1px solid #FA1100;
     background: #FA1100;
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 16px;
     text-transform: uppercase;
     margin-right: 18px;
@@ -117,7 +124,7 @@ button:hover {
 .study__greed-item,
 .teacher__greed-item {
     width: 340px;
-    height: 133px;
+    min-height: 133px;
     border-radius: 10px;
     border: 1px solid var(--txt);
 }
@@ -145,6 +152,7 @@ button:hover {
 .teacher__item-text a {
     color: #757575;
     font-size: 17px;
+    font-weight: 400;
 }
 
 .study__greed-item2 .study__item-name a {
@@ -164,6 +172,7 @@ button:hover {
 .study__greed-item2 .study__item-icon {
     margin: 0 15px 0 10px;
 }
+
 
 .study__greed-item4 .study__item-icon {
     margin: 0 30px 0 17px;
@@ -222,14 +231,16 @@ button:hover {
 }
 
 .admin__greed-item,
-.teacher__greed-item3 {
+.teacher__greed-item3,
+.events__flex-item {
     width: 707px;
-    height: 305px;
+    min-height: 305px;
     border-radius: 10px;
     border: 1px solid var(--txt);
 }
 
-.admin__item-name {
+.admin__item-name,
+.events__item-name {
     color: var(--graphite-01);
     font-size: 40px;
     margin: 30px 0 17px 58px;
@@ -260,16 +271,32 @@ button:hover {
     margin-left: 85px;
 }
 
-.admin__content-name {
+.admin__content-name,
+.admin__mobile-name {
     color: var(--graphite-01);
     font-size: 30px;
     font-weight: 450;
     margin: 16px 0;
 }
 
-.admin__greed-item-3,
-.admin__greed-item-4 {
-    height: 340px;
+.admin__mobile-name,
+.admin__info3-mobile,
+.admin__accordion,
+.admin__activity-mobile,
+.admin__mobile-white6,
+.admin__mobile-transition,
+.admin__mobile-content,
+.news__mobile-time,
+.menu__mobile-button, 
+.mystudents__container-mobile,
+.events__teacher-none {
+    display: none;
+}
+
+
+.admin__greed-item3,
+.admin__greed-item4 {
+    min-height: 340px;
 }
 
 .admin__item-menu {
@@ -293,7 +320,7 @@ button:hover {
     text-decoration: underline;
 }
 
-.admin__content-info-3 {
+.admin__content-info3 {
     display: flex;
     margin: 42px 0 17px 60px;
 }
@@ -348,7 +375,8 @@ button:hover {
 
 .admin__timesheet-data {
     color: #757575;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .admin__clock {
@@ -359,6 +387,7 @@ button:hover {
 .admin__timesheet-clock {
     margin: 3px;
     color: var(--graphite-01);
+    font-weight: 400;
     font-size: 18px;
 }
 
@@ -368,9 +397,9 @@ button:hover {
 }
 
 .admin__button-red {
-    width: 173px;
+    min-width: 173px;
     height: 27px;
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 12px;
     text-transform: uppercase;
     background-color: var(--red);
@@ -378,11 +407,11 @@ button:hover {
 }
 
 .admin__button-white {
-    width: 173px;
+    min-width: 173px;
     height: 27px;
     border-radius: 3px;
     border: 1px solid var(--red);
-    background-color: #fff;
+    background-color: #FFFFFF;
     color: var(--graphite-01);
     font-size: 12px;
     text-transform: uppercase;
@@ -393,10 +422,9 @@ button:hover {
 }
 
 .admin__item-activity {
-    display: flex;
     color: var(--graphite-01);
-    text-align: right;
     font-size: 16px;
+    font-weight: 400;
     margin: 43px 0 0 70px;
 }
 
@@ -408,6 +436,7 @@ button:hover {
     color: var(--graphite-01);
     font-size: 23px;
     margin-bottom: 15px;
+    font-weight: 400;
 }
 
 .admin__scale {
@@ -435,7 +464,8 @@ button:hover {
     list-style: none;
     color: var(--graphite-01);
     font-size: 21px;
-    margin: 37px 0 0 297px;
+    margin-top: 37px;
+    justify-content: end;
 }
 
 .admin__progress-menu li {
@@ -457,7 +487,7 @@ button:hover {
     border: 0;
 }
 
-.admin__button-white-6 {
+.admin__button-white6 {
     margin: 40px 0 0 220px;
     color: var(--graphite-01);
     font-size: 16px;
@@ -505,8 +535,21 @@ button:hover {
     color: var(--graphite-01);
 }
 
-.admin__greed-item-7 {
-    height: 507px;
+.events__flex {
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
+}
+
+.events__flex-item {
+    min-height: 507px;
+    width: 707px;
+}
+
+.events__teacher-item {
+    margin-top: 40px;
+    width: 707px;
+    min-height: 532px;
 }
 
 .admin__events {
@@ -514,30 +557,30 @@ button:hover {
     justify-content: space-between;
 }
 
-.admin__item-transition {
-    margin: 50px 50px 0 0;
-}
-
 .admin__transition-back {
     margin-right: 30px;
 }
 
-.admin__item-name7 {
+.events__item-name {
     margin: 37px 0 25px 60px;
 }
 
-.admin__content-foto {
+.events__item-transition {
+    margin: 50px 50px 0 0;
+}
+
+.events__content-info {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.events__content-foto {
     margin-top: 10px;
     width: 176px;
     height: 140px;
 }
 
-.admin__content-info-7 {
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-.admin__content-name-7 {
+.events__content-name {
     color: var(--graphite-01);
     font-size: 28px;
     font-weight: 450;
@@ -545,13 +588,13 @@ button:hover {
     margin-bottom: 5px;
 }
 
-.admin__content-data-7 {
+.events__content-data {
     color: #757575;
     font-size: 18px;
     margin-bottom: 15px;
 }
 
-.admin__content-text-7 {
+.events__content-text {
     color: #757575;
     font-size: 20px;
     margin-bottom: 20px;
@@ -559,11 +602,11 @@ button:hover {
     font-weight: 300;
 }
 
-.admin__content-more {
+.events__content-more {
     display: flex;
 }
 
-.admin__more-text {
+.events__more-text {
     color: var(--graphite-01);
     font-size: 14px;
     font-weight: 450;
@@ -592,10 +635,11 @@ button:hover {
     margin: 50px 58px 23px 0;
     color: #757575;
     font-size: 18px;
+    font-weight: 400;
 }
 
 .news__line {
-    width: 1350px;
+    max-width: 1350px;
     height: 1px;
     background: #000;
     margin: 0 auto;
@@ -639,9 +683,14 @@ button:hover {
     margin-bottom: 90px;
 }
 
+.teacher__container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .teacher__greed {
     display: grid;
-    grid-template-columns: 340px 340px 707px;
+    grid-template-columns: repeat(2, 340px);
     grid-template-rows: 133px 133px 203px;
     margin-top: 40px;
     grid-column-gap: 27px;
@@ -655,9 +704,9 @@ button:hover {
     margin-left: 25px;
 }
 
-.teacher__greed-item6 {
+.teacher__greed-item5 {
     width: 707px;
-    height: 203px;
+    min-height: 203px;
     border-radius: 10px;
     border: 1px solid var(--txt);
 }
@@ -665,6 +714,11 @@ button:hover {
 .teacher__content-info {
     display: flex;
     margin-top: 10px;
+}
+
+.teacher__info-name,
+.teacher__info-block{
+    display: flex;
 }
 
 .teacher__item-icon {
@@ -699,7 +753,7 @@ button:hover {
     margin: 20px;
 }
 
-.teacher__item-name6 {
+.teacher__item-name5 {
     color: var(--graphite-01);
     font-size: 31px;
     font-weight: 600;
@@ -737,7 +791,7 @@ button:hover {
 .mystudents__name {
     color: var(--graphite-01);
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 30px 0 20px 60px;
 }
 
