@@ -17,11 +17,30 @@
             font-family: Futura New;
             font-weight: 500;
         }
-        .present{
+
+        .present {
             display: flex;
         }
-        p{
+
+        p {
             margin-left: 100px;
+        }
+
+        @media screen and (max-width: 1024px) {
+
+            .header,
+            .sidebar {
+                display: none;
+            }
+
+            .present {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .title {
+                margin-left: 10px;
+            }
         }
     </style>
 </head>
@@ -33,12 +52,18 @@
         <div class="sidebar"></div>
         <div class="main__content present">
             <div>
-                <a href="./pades/student'sPersonalAccount.html" class="title"><p>Личный кабинет ученика</p></a>
-                <a href="./pades/student'sPersonalAccount.html"><img class="title" src="./ЛК ученика_title.jpg" alt=""></a>
+                <a href="./pades/student'sPersonalAccount.html" class="title">
+                    <p>Личный кабинет ученика</p>
+                </a>
+                <a href="./pades/student'sPersonalAccount.html"><img class="title" src="./ЛК ученика_title.jpg"
+                        alt=""></a>
             </div>
             <div>
-                <a href="./pades/teacher'sPersonalAccount.html" class="title"><p>Личный кабинет учителя</p></a>
-                <a href="./pades/teacher'sPersonalAccount.html"><img class="title" src="./ЛК учителя-title.jpg" alt=""></a>
+                <a href="./pades/teacher'sPersonalAccount.html" class="title">
+                    <p>Личный кабинет учителя</p>
+                </a>
+                <a href="./pades/teacher'sPersonalAccount.html"><img class="title" src="./ЛК учителя-title.jpg"
+                        alt=""></a>
             </div>
         </div>
     </div>
