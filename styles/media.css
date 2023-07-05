@@ -115,6 +115,7 @@
 
     .events {
         margin-top: 50px;
+        margin-bottom: 0;
     }
 
     .admin__mobile-name,
@@ -334,6 +335,10 @@
         text-align: center;
     }
 
+    .events__flex-item:last-child {
+        margin-bottom: 0;
+    }
+
     .events__content-info {
         margin-left: 0;
     }
@@ -355,12 +360,22 @@
         justify-content: center;
     }
 
+    .news__greed {
+        margin: 0 0 87px 18px;
+    }
+
     .news__content-flex {
         justify-content: center;
     }
 
     .news__mobile-time {
         text-align: center;
+    }
+
+    .news__item-photo {
+        width: 115px;
+        height: 95px;
+        margin-right: 15px;
     }
 
     .menu__button-red {
@@ -448,20 +463,20 @@
         margin: 0;
     }
 
-    .mystudents__button-group{
+    .mystudents__button-group {
         flex-direction: column;
         align-items: center;
     }
 
-    .mystudents__button-red{
-        margin:62px 0 27px;
+    .mystudents__button-red {
+        margin: 62px 0 27px;
     }
 
-    .mystudents__button-white{
+    .mystudents__button-white {
         margin-bottom: 50px;
     }
 
-    .events__teacher-none{
+    .events__teacher-none {
         display: block;
     }
 
@@ -510,6 +525,16 @@
     .news__content-name,
     .news__content-text {
         width: 80%;
+    }
+
+    .news__content-name {
+        font-size: 21px;
+        font-weight: 300;
+    }
+
+    .news__content-text {
+        font-size: 20px;
+        font-weight: 300;
     }
 
     .teacher__info-block {
@@ -576,5 +601,26 @@
 
     .admin__scale-red {
         width: 20%;
+    }
+
+    .events__content-name {
+        font-size: 22px;
+    }
+
+    .events__content-data {
+        font-size: 17px;
+    }
+
+    .events__content-text {
+        font-size: 18px;
+    }
+
+
+    .news__content-name {
+        font-size: 17px;
+    }
+
+    .news__content-text {
+        font-size: 16px;
     }
 }
