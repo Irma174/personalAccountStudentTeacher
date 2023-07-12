@@ -983,15 +983,15 @@ button:hover {
 }
 
 .mystudents__information-container {
-    width: 1344px;
-    height: 690px;
+    width: 100%; 
+    /* height: 690px; */
     border: 1px solid #FA1100;
     border-radius: 10px;
-    margin-left: 160px;
-    margin-top: -780px;
-    position: absolute;
-    z-index: 1;
-    display: block;
+    /* margin-left: 160px; */
+    /* margin-top: -780px; */
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* display: none; */
     background: #FFFFFF;
 }
 
@@ -1001,14 +1001,16 @@ button:hover {
 
 .mystudents__information-grid {
     display: grid;
-    grid-template-columns: 300px 300px 500px 244px;
-    grid-template-rows: 130px;
-    margin-left: 60px;
-    margin-top: 45px;
+    /* grid-template-columns: 300px 300px 500px 244px;*/
+    grid-template-rows: 130px; 
+    grid-template-columns: 25% 20% 47% 8%;
+    /* margin-left: 60px;
+    margin-top: 45px; */
 }
 
 .mystudents__information-row {
-    grid-template-rows: 155px;
+    /* grid-template-rows: 155px; */
+    grid-template-rows: 100%;
 }
 
 .information__grid-header {
@@ -1023,7 +1025,8 @@ button:hover {
 }
 
 .information__grid-header2 {
-    padding-left: 90px;
+    /* padding-left: 90px; */
+    padding-left: 25px;
 }
 
 .information__grid-header3 {
@@ -1031,14 +1034,15 @@ button:hover {
 }
 
 .mystudents__information-line {
-    width: 1208px;
+    /* width: 1208px; */
+    width: 100%;
     height: 1px;
     background: #000;
     margin: 0 auto;
 }
 
 .information__grid-student {
-    margin-left: 25px;
+    margin: 20px 0 10px 25px;
 }
 
 .information__grid-name {
@@ -1058,12 +1062,14 @@ button:hover {
     font-size: 32px;
     font-weight: 450;
     margin-top: 35px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
+    margin: auto;
 }
 
 .information__grid-test {
-    padding-top: 40px;
-    padding-left: 120px;
+    /* padding-top: 40px;
+    padding-left: 120px; */
+    margin: auto;
 }
 
 .information__test-data,
@@ -1079,6 +1085,177 @@ button:hover {
 }
 
 .information__test-mail {
-    margin-top: 30px;
-    margin-left: 35px;
+    /* margin-top: 30px;
+    margin-left: 35px; */
+    margin: 50px auto;
 }
+
+/* Модальное окно */
+.modal {
+    -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+  }
+
+  
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 55%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+  }
+  
+  .modal:focus {
+    outline: none;
+  }
+
+  .modal h1, .modal h2, .modal h3, .modal h4 {
+    margin-top: 0;
+  }
+  
+  .modal .modal-content {
+    padding: 24px;
+  }
+  
+  .modal .modal-close {
+    cursor: pointer;
+  }
+  
+  .modal .modal-footer {
+    border-radius: 0 0 2px 2px;
+    background-color: #fafafa;
+    padding: 4px 6px;
+    height: 56px;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .modal .modal-footer .btn-flat {
+    margin: 6px 0;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    z-index: 999;
+    top: -25%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 125%;
+    width: 100%;
+    background: #000;
+    display: none;
+    will-change: opacity;
+  }
+  
+  .modal.modal-fixed-footer {
+    padding: 0;
+    height: 70%;
+  }
+  
+  .modal.modal-fixed-footer .modal-content {
+    position: absolute;
+    height: calc(100% - 56px);
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal.modal-fixed-footer .modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .modal.bottom-sheet {
+    top: auto;
+    bottom: -100%;
+    margin: 0;
+    width: 100%;
+    max-height: 45%;
+    border-radius: 0;
+    will-change: bottom, opacity;
+  }
+
+  /* Modal */
+.datepicker-modal {
+    max-width: 325px;
+    min-width: 300px;
+    max-height: none;
+  }
+  
+  .datepicker-container.modal-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+
+
+  .modal.modal-fixed-footer {
+    padding: 0;
+    height: 70%;
+  }
+  
+  .modal.modal-fixed-footer .modal-content {
+    position: absolute;
+    height: calc(100% - 56px);
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
+  
+  .modal.modal-fixed-footer .modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0;
+  }
+
+  .modal .modal-content {
+    padding: 24px;
+  }
+
+  .modal.modal-fixed-footer .modal-content {
+    position: absolute;
+    height: calc(100% - 56px);
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .datepicker-container.modal-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+
+
+  .modal .modal-footer {
+    border-radius: 0 0 2px 2px;
+    background-color: #fafafa;
+    padding: 4px 6px;
+    height: 56px;
+    width: 100%;
+    text-align: right;
+  }
+  
