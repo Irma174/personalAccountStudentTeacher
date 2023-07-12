@@ -11,16 +11,16 @@
     .main {
         display: block;
     }
+
+    .main__content {
+        padding-left: 100px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
 
     .main {
         width: 100%;
-    }
-
-    .study__greed-item2 .study__item-name {
-        font-size: 26px;
     }
 
     .admin__item-activity,
@@ -54,6 +54,7 @@
         display: block;
         margin-top: 35px;
         margin-bottom: 50px;
+        text-align: center;
     }
 
     .menu__mobile-button {
@@ -70,7 +71,7 @@
     }
 
     .main__content {
-        padding-left: 30px;
+        padding-left: 70px;
     }
 
     .teacher {
@@ -89,7 +90,6 @@
     }
 
     .mystudents__name {
-        font-size: 32px;
         margin: 25px 0 15px 0;
     }
 
@@ -100,8 +100,6 @@
 
     .mystudent__mobile-header {
         color: var(--graphite-01);
-        font-size: 16px;
-        font-weight: 400;
         margin-bottom: 10px;
     }
 
@@ -122,6 +120,7 @@
         width: 270px;
         height: 50px;
         margin: 0;
+        font-size: 22px;
     }
 
     .mystudents__button-group {
@@ -172,12 +171,10 @@
     }
 
     .admin__item-name {
-        font-size: 32px;
         margin: 25px auto 15px;
     }
 
     .events__item-name {
-        font-size: 32px;
         margin: 25px auto 15px;
     }
 
@@ -188,10 +185,6 @@
     .events__more-arrow {
         margin: 36px 0 64px 30px;
         justify-content: center;
-    }
-
-    .events__item-transition {
-        margin: 0 auto 51px;
     }
 
     .teacher__content-info {
@@ -270,6 +263,7 @@
         color: #1F1F22;
         font-size: 22px;
         margin-right: 21px;
+        font-weight: 450;
     }
 
     .admin__info3-mobile {
@@ -325,11 +319,11 @@
         color: var(--txt);
         font-size: 22px;
         font-weight: 400;
+        text-transform: uppercase;
     }
 
     .admin__mobile-transition {
-        margin: 0;
-        margin-bottom: 62px;
+        margin: 0 auto 62px;
     }
 
     .events {
@@ -363,12 +357,7 @@
 
     .news__mobile-time {
         text-align: center;
-    }
-
-    .news__item-photo {
-        width: 115px;
-        height: 95px;
-        margin-right: 15px;
+        margin: 29px auto;
     }
 
     .news__content {
@@ -381,7 +370,7 @@
 
     .admin__content-mobile {
         justify-content: space-between;
-        margin-right: 45px;.study
+        margin-right: 45px;
     }
 
     .admin__timesheet {
@@ -401,6 +390,7 @@
     .menu__header {
         width: 100%;
     }
+
     .main {
         width: 95%;
         margin: 0 auto;
@@ -420,6 +410,8 @@
 
     .menu__button-item {
         margin-right: 0;
+        font-size: 22px;
+        padding: 0;
     }
 
     .menu__button-item3 {
@@ -435,6 +427,14 @@
     .admin__greed {
         grid-column-gap: 0;
         margin-bottom: 50px;
+    }
+
+    .admin__item-name {
+        font-size: 32px;
+    }
+
+    .admin__button-mobile {
+        display: block;
     }
 
     .study__greed-item1,
@@ -481,12 +481,6 @@
         margin: 15px auto;
     }
 
-    .accordion__header {
-        color: #1F1F22;
-        font-size: 22px;
-        margin-right: 21px;
-    }
-
     .admin__content-info3 {
         flex-direction: column;
         margin: 0;
@@ -528,6 +522,12 @@
 
     .news__content {
         width: 100%;
+    }
+
+    .news__item-photo {
+        width: 115px;
+        height: 95px;
+        margin-right: 15px;
     }
 
     .admin__item-line2 {
@@ -588,39 +588,10 @@
         justify-content: center;
     }
 
-    .admin__mobile-white6 {
-        margin: 0 auto;
-        margin-bottom: 51px;
-        width: 270px;
-        height: 50px;
-        border-radius: 3px;
-        border: 1px solid var(--red);
-        color: var(--txt);
-        font-size: 22px;
-        font-weight: 400;
-    }
-
-    .admin__mobile-transition {
-        margin: 0;
-        margin-bottom: 62px;
-    }
-
-    .admin__mobile-content {
-        display: block;
-        margin-top: 35px;
-        margin-bottom: 50px;
-    }
-
     .admin__mobile-row {
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 30px;
-    }
-
-    .admin__row-content {
-        color: var(--graphite-01);
-        font-size: 25px;
-        font-weight: 400;
     }
 
     .admin__row-status,
@@ -653,21 +624,25 @@
         justify-content: center;
     }
 
+    .events__more-text {
+        font-size: 20px;
+    }
+
     .news__greed {
         margin-left: 0;
     }
+
     .news__greed-item {
         margin-left: 20px;
     }
 
-    .news__mobile-time {
-        margin: 50px auto 29px;
+    .news__name {
+        margin: 39px auto 26px;
     }
 
     .menu__button-red {
         margin-right: 0;
     }
-
 
     .teacher__greed {
         display: flex;
@@ -703,6 +678,26 @@
         justify-content: center;
     }
 
+    .mystudents__name {
+        font-size: 32px;
+    }
+
+    .mystudent__mobile-header,
+    .mystudent__mobile-header1,
+    .mystudent__mobile-header2 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .mystudents__timetable-icon {
+        padding-bottom: 5px;
+    }
+
+    .mystudents__timetable-time,
+    .mystudents__timetable-week {
+        font-size: 14px;
+    }
+
     .mystudents__container-mobile {
         width: 100%;
         display: block;
@@ -729,20 +724,6 @@
         display: block;
     }
 
-    .study__item-name,
-    .teacher__item-name {
-        font-size: 25px;
-    }
-
-    .study__greed-item2 .study__item-name {
-        font-size: 21px;
-    }
-
-    .study__greed-item3 .study__item-text,
-    .study__greed-item4 .study__item-text {
-        font-size: 15px;
-    }
-
     .admin__icon {
         margin-right: 20px;
     }
@@ -759,19 +740,28 @@
         width: 30%;
     }
 
+    .admin__button-red,
+    .admin__button-white {
+        font-size: 22px;
+        width: 270px;
+        height: 50px;
+    }
+
     .news__content-name,
     .news__content-text {
-        width: 80%;
+        width: 100%;
     }
 
     .news__content-name {
-        font-size: 21px;
-        font-weight: 300;
+        font-size: 12px;
+        font-weight: 450;
+        text-transform: uppercase;
     }
 
     .news__content-text {
-        font-size: 20px;
+        font-size: 10px;
         font-weight: 300;
+        text-transform: uppercase;
     }
 
     .teacher__info-block {
@@ -787,14 +777,10 @@
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
 
     .study__item-content {
         width: 50%;
-    }
-
-    .study__greed-item2 .study__item-name {
-        font-size: 18px;
     }
 
     .study__item-icon {
@@ -810,10 +796,6 @@
         margin-right: 10px;
     }
 
-    .admin__mobile-name {
-        font-size: 23px;
-    }
-
     .admin__name-teacher {
         font-size: 28px;
     }
@@ -823,24 +805,11 @@
     }
 
     .events__content-name {
-        font-size: 22px;
         width: 100%;
     }
 
-    .events__content-data {
-        font-size: 17px;
-    }
-
-    .events__content-text {
-        font-size: 18px;
-    }
-
-    .news__content-name {
-        font-size: 17px;
-    }
-
-    .news__content-text {
-        font-size: 16px;
+    .news__name {
+        font-size: 35px;
     }
 
     .study__greed-item5 .study__item-flex,

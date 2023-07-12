@@ -1,7 +1,43 @@
 @font-face {
-    font-family: 'Futura New';
-    src: url('../fonts/FuturaNewMedium-Reg.ttf');
+    font-family: "Futura New";
+    src: local("FuturaNewDemi-Reg"),
+        local("FuturaNewDemi-Reg"),
+        url("../fonts/./FuturaNewDemi-Reg/./FuturaNewDemi-Reg.woff2") format("woff2"),
+        url("../fonts/./FuturaNewDemi-Reg/./FuturaNewDemi-Reg.woff") format("woff"),
+        url("../fonts/./FuturaNewDemi-Reg/./FuturaNewDemi-Reg.ttf") format("ttf");
+    font-weight: 500;
 }
+
+@font-face {
+    font-family: "Futura New";
+    src: local("FuturaNewMedium-Reg"),
+        local("FuturaNewMedium-Reg"),
+        url("../fonts/./FuturaNewMedium-Reg/./FuturaNewMedium-Reg.woff2") format("woff2"),
+        url("../fonts/./FuturaNewBook-Reg/./FuturaNewBook-Reg.woff") format("woff"),
+        url("../fonts/./FuturaNewBook-Reg/./FuturaNewBook-Reg.ttf") format("ttf");
+    font-weight: 450;
+}
+
+@font-face {
+    font-family: "Futura New";
+    src: local("FuturaNewBook-Reg"),
+        local("FuturaNewBook-Reg"),
+        url("../fonts/./FuturaNewBook-Reg/./FuturaNewBook-Reg.woff2") format("woff2"),
+        url("../fonts/./FuturaNewBook-Reg/./FuturaNewBook-Reg.woff") format("woff"),
+        url("../fonts/./FuturaNewBook-Reg/./FuturaNewBook-Reg.ttf") format("ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Futura New";
+    src: local("FuturaNewLight-Reg"),
+        local("FuturaNewLight-Reg"),
+        url("../fonts/./FuturaNewLight-Reg/./FuturaNewLight-Reg.woff2") format("woff2"),
+        url("../fonts/./FuturaNewLight-Reg/./FuturaNewLight-Reg.woff") format("woff"),
+        url("../fonts/./FuturaNewLight-Reg/./FuturaNewLight-Reg.ttf") format("ttf");
+    font-weight: 300;
+}
+
 
 :root {
     --graphite-01: #1F1F22;
@@ -92,8 +128,11 @@ button:hover {
     color: #FFFFFF;
     background: #1F1F22;
 }
+
 .menu__button-item:hover,
-.menu__button-red:hover{box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
+.menu__button-red:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 
 .menu__button-red {
@@ -146,27 +185,29 @@ button:hover {
 }
 
 .study__greed-item1 .study__item-flex .study__item-content,
-.study__greed-item3 .study__item-flex .study__item-content{
+.study__greed-item3 .study__item-flex .study__item-content {
     margin-left: 25px;
     margin-bottom: 10px;
 }
 
-.study__greed-item2 .study__item-flex .study__item-content{
+.study__greed-item2 .study__item-flex .study__item-content {
     margin-left: 10px;
     margin-bottom: 10px;
 }
 
-.study__greed-item4 .study__item-flex{
+.study__greed-item4 .study__item-flex {
     justify-content: center;
 }
-.study__greed-item4 .study__item-flex .study__item-icon{
+
+.study__greed-item4 .study__item-flex .study__item-icon {
     margin-right: 33px;
 }
 
-.study__greed-item5 .study__item-flex .study__item-content{
+.study__greed-item5 .study__item-flex .study__item-content {
     margin-right: 20px;
 }
-.study__greed-item6 .study__item-flex .study__item-content{
+
+.study__greed-item6 .study__item-flex .study__item-content {
     margin-right: 10px;
 }
 
@@ -186,7 +227,7 @@ button:hover {
     font-weight: 400;
 }
 
-.study__greed-item2{
+.study__greed-item2 {
     margin-right: 20px;
 }
 
@@ -278,8 +319,8 @@ button:hover {
 
 .admin__icon3 {
     margin-right: 0;
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
 }
 
 .admin__content-info {
@@ -304,7 +345,8 @@ button:hover {
 .news__mobile-time,
 .menu__mobile-button,
 .mystudents__container-mobile,
-.events__teacher-none {
+.events__teacher-none,
+.admin__button-mobile {
     display: none;
 }
 
@@ -417,7 +459,7 @@ button:hover {
     color: #FFFFFF;
     background-color: var(--red);
     margin: 22px 0 10px;
-    font-style: 12px;
+    font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
     border-radius: 3px;
@@ -431,7 +473,7 @@ button:hover {
     border: 1px solid var(--red);
     background-color: #FFFFFF;
     color: var(--graphite-01);
-    font-style: 12px;
+    font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -542,15 +584,12 @@ button:hover {
 .admin__grid-header {
     color: var(--graphite-01);
     font-size: 18px;
-
+    font-weight: 450;
 }
 
 .admin__grid-order,
 .admin__grid-sum {
     color: var(--red);
-}
-
-.admin__grid-order{
     font-weight: 450;
 }
 
@@ -592,6 +631,7 @@ button:hover {
 
 .events__item-transition {
     margin: 50px 50px 0 0;
+    display: none;
 }
 
 .events__content-info {
@@ -622,7 +662,7 @@ button:hover {
 
 .events__content-text {
     color: #757575;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 20px;
     width: 384px;
     font-weight: 300;
@@ -640,16 +680,16 @@ button:hover {
     transition: 1s;
 }
 
-.events__more-text:hover{
-    margin-right: 20px;
+.events__more-text:hover {
+    margin-right: 30px;
 }
 
-.events__arrow{
+.events__arrow {
     transition: 1s;
 }
 
-.events__arrow:hover{
-    margin-left:20px;
+.events__arrow:hover {
+    margin-left: 20px;
 }
 
 .news__content {
@@ -665,8 +705,7 @@ button:hover {
 
 .news__name {
     color: var(--graphite-01);
-    font-size: 41px;
-    font-weight: 500;
+    font-size: 40px;
     margin: 40px 0 23px 58px;
 }
 
@@ -704,7 +743,7 @@ button:hover {
 
 .news__content-name {
     color: var(--graphite-01);
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 450;
     width: 440px;
     margin-bottom: 15px;
@@ -736,7 +775,7 @@ button:hover {
     grid-row-gap: 30px;
 }
 
-.teacher__greed-item .teacher__item-flex .teacher__item-content{
+.teacher__greed-item .teacher__item-flex .teacher__item-content {
     margin-right: 25px;
 }
 
@@ -754,8 +793,8 @@ button:hover {
     border: 1px solid var(--txt);
 }
 
-.teacher__greed-item5:hover{
-    box-shadow:none;
+.teacher__greed-item5:hover {
+    box-shadow: none;
 }
 
 .teacher__content-info {
@@ -800,9 +839,7 @@ button:hover {
 }
 
 .teacher__item-name5 {
-    color: var(--graphite-01);
     font-size: 31px;
-    font-weight: 600;
     margin: 25px 0 10px 55px;
 }
 
@@ -919,6 +956,7 @@ button:hover {
 
 .mystudents__button {
     height: 27px;
+    font-weight: 400;
     border-radius: 3px;
     font-size: 12px;
     text-transform: uppercase;
@@ -953,7 +991,12 @@ button:hover {
     margin-top: -780px;
     position: absolute;
     z-index: 1;
-    background-color: #FFF;
+    display: block;
+    background: #FFFFFF;
+}
+
+.mystudents__popUp-active {
+    display: block;
 }
 
 .mystudents__information-grid {
