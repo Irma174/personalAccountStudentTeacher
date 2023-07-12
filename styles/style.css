@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Futura New';
-    src: url('../fonts/FuturaNewDemi-Reg.ttf');
+    src: url('../fonts/FuturaNewMedium-Reg.ttf');
 }
 
 :root {
@@ -39,10 +39,6 @@ a {
     border: 1px solid green;
 }
 
-.button {
-    font-weight: 400;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
 
 button:hover {
     cursor: pointer;
@@ -57,7 +53,7 @@ button:hover {
 }
 
 .container {
-    width: 1465px;
+    max-width: 1465px;
     margin-left: 100px;
 }
 
@@ -84,6 +80,7 @@ button:hover {
     border: 1px solid #FA1100;
     color: var(--txt);
     font-size: 16px;
+    font-weight: 400;
     background-color: #FFFFFF;
     text-transform: uppercase;
     margin-right: 13px;
@@ -95,6 +92,9 @@ button:hover {
     color: #FFFFFF;
     background: #1F1F22;
 }
+.menu__button-item:hover,
+.menu__button-red:hover{box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
+
 
 .menu__button-red {
     min-width: 201px;
@@ -104,6 +104,7 @@ button:hover {
     background: #FA1100;
     color: #FFFFFF;
     font-size: 16px;
+    font-weight: 400;
     text-transform: uppercase;
     margin-right: 18px;
 }
@@ -182,6 +183,7 @@ button:hover {
 .teacher__item-text {
     color: #757575;
     font-size: 17px;
+    font-weight: 400;
 }
 
 .study__greed-item2{
@@ -242,7 +244,7 @@ button:hover {
 
 .admin__item-line,
 .teacher__item-line {
-    width: 591px;
+    max-width: 591px;
     height: 1px;
     background-color: #000;
     margin: 0 auto;
@@ -413,10 +415,13 @@ button:hover {
     min-width: 173px;
     height: 27px;
     color: #FFFFFF;
-    font-size: 12px;
-    text-transform: uppercase;
     background-color: var(--red);
     margin: 22px 0 10px;
+    font-style: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid var(--red);
 }
 
 .admin__button-white {
@@ -426,7 +431,8 @@ button:hover {
     border: 1px solid var(--red);
     background-color: #FFFFFF;
     color: var(--graphite-01);
-    font-size: 12px;
+    font-style: 12px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -476,13 +482,14 @@ button:hover {
     display: flex;
     list-style: none;
     color: var(--graphite-01);
-    font-size: 21px;
     margin-top: 37px;
     justify-content: end;
 }
 
 .admin__progress-menu li {
     margin-right: 12px;
+    font-size: 21px;
+    font-weight: 400;
 }
 
 .admin__progress-menu li:after {
@@ -543,9 +550,14 @@ button:hover {
     color: var(--red);
 }
 
+.admin__grid-order{
+    font-weight: 450;
+}
+
 .admin__grid-data,
 .admin__grid-status {
     color: var(--graphite-01);
+    font-weight: 400;
 }
 
 .events__flex {
@@ -604,6 +616,7 @@ button:hover {
 .events__content-data {
     color: #757575;
     font-size: 18px;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
@@ -615,7 +628,7 @@ button:hover {
     font-weight: 300;
 }
 
-.events__content-more {
+.events__more-arrow {
     display: flex;
 }
 
@@ -624,6 +637,19 @@ button:hover {
     font-size: 14px;
     font-weight: 450;
     margin-right: 20px;
+    transition: 1s;
+}
+
+.events__more-text:hover{
+    margin-right: 20px;
+}
+
+.events__arrow{
+    transition: 1s;
+}
+
+.events__arrow:hover{
+    margin-left:20px;
 }
 
 .news__content {
@@ -760,7 +786,6 @@ button:hover {
 .teacher__item-name {
     color: var(--graphite-01);
     font-size: 32px;
-    font-weight: 500;
 }
 
 .teacher__item-content2 {
@@ -812,12 +837,11 @@ button:hover {
 .mystudents__name {
     color: var(--graphite-01);
     font-size: 40px;
-    font-weight: 500;
     margin: 30px 0 20px 60px;
 }
 
 .mystudents__line {
-    width: 1352px;
+    max-width: 1352px;
     height: 1px;
     margin: 0 auto;
     background-color: #000;
@@ -860,6 +884,7 @@ button:hover {
 .mystudents__timetable-time {
     color: var(--graphite-01);
     font-size: 22px;
+    font-weight: 400;
 }
 
 .mystudents__grid-company {
@@ -982,6 +1007,7 @@ button:hover {
 .information__grid-program {
     color: #757575;
     font-size: 17px;
+    font-weight: 400;
 }
 
 .information__grid-lessons {
@@ -1002,6 +1028,7 @@ button:hover {
 .information__test-persent {
     color: var(--graphite-01);
     font-size: 22px;
+    font-weight: 400;
 }
 
 .information__test-persent {
