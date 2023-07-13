@@ -1150,3 +1150,55 @@ button:hover {
     will-change: opacity;
 }
 
+.mystudents__information-popupmobile {
+    background-image: url(../images/Fon.jpg);
+    background-repeat: repeat;
+}
+
+.mystudents__item {
+    text-align: center;
+}
+
+.mystudents__information-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.mustudents__popup-head {
+    color: var(--graphite-01);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mustudents__popup-student {
+    margin-top: 57px;
+    margin-bottom: 25px;
+}
+
+.information__popup-program {
+    color: #757575;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.information__popup-foto {
+    width: 79px;
+    height: 79px;
+    margin-bottom: 10px;
+}
+
+.popup___icon-mail {
+    width: 60px;
+    height: 60px;
+    margin: 25px auto;
+}
+
+.popup__balance {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 68px;
+}
+
+.popup__test {
+    margin-top: 25px;
+}
