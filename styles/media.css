@@ -19,6 +19,7 @@
 
 @media screen and (max-width: 1024px) {
 
+
     .main {
         width: 100%;
     }
@@ -778,6 +779,9 @@
         width: 60px;
         height: 60px;
         margin: 25px auto;
+    }
+    .carousel.carousel-slider .carousel-item {
+padding-right: 80px;
     }
 
 }
