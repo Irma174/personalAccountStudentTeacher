@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../styles/materialize.css"> -->
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/media.css">
     <title>ЛК Учителя</title>
@@ -503,8 +502,8 @@
                                 <p class="mystudents__timetable-time">18:00 - 19:00 (Мск)</p>
                             </div>
                             <div class="mystudents__button-group">
-                                <button
-                                    class="button mystudents__button mystudents__button-red mystudents__button-mobile ">Информация</button>
+                                <button data-target="modal1"
+                                    class="modal-trigger button mystudents__button mystudents__button-red mystudents__button-mobile">Информация</button>
                                 <button
                                     class="button mystudents__button mystudents__button-white mystudents__button-mobile">Зайти
                                     на
@@ -529,8 +528,8 @@
                                 <p class="mystudents__timetable-time">18:00 - 19:00 (Мск)</p>
                             </div>
                             <div class="mystudents__button-group">
-                                <button
-                                    class="button mystudents__button mystudents__button-red mystudents__button-mobile">Информация</button>
+                                <button data-target="modal1"
+                                    class="modal-trigger button mystudents__button mystudents__button-red mystudents__button-mobile">Информация</button>
                                 <button
                                     class="button mystudents__button mystudents__button-white mystudents__button-mobile">Зайти
                                     на
@@ -555,8 +554,8 @@
                                 <p class="mystudents__timetable-time">18:00 - 19:00 (Мск)</p>
                             </div>
                             <div class="mystudents__button-group">
-                                <button
-                                    class="button mystudents__button mystudents__button-red mystudents__button-mobile">Информация</button>
+                                <button data-target="modal1"
+                                    class="modal-trigger button mystudents__button mystudents__button-red mystudents__button-mobile">Информация</button>
                                 <button
                                     class="button mystudents__button mystudents__button-white mystudents__button-mobile">Зайти
                                     на
@@ -714,16 +713,67 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div id="modal2" class="modal mystudents__information">
+            <div class="modal-content mystudents__information-container">
 
-            <!-- Modal Structure -->
-            <!-- <div id="modal1" class="modal mystudents__information">
-                                    <div  class="modal-content">
-                                        <div class="modal-content">
-                                            <h4>Modal Header</h4>
-                                            <p>A bunch of text</p>
-                                        </div>
-                                    </div>
-                                     -->
+                <div class="mystudents__information-grid">
+                    <div class="information__grid-header information__grid-header1">Студент</div>
+                    <div class="information__grid-header information__grid-header2">Баланс уроков</div>
+                    <div class="information__grid-header information__grid-header3">Тестирования</div>
+                    <div><img class="modal-close waves-effect waves-green btn-flat" src="../images/icon_close.svg"
+                            alt=""></div>
+                </div>
+                <div class="mystudents__information-line"></div>
+                <div class="mystudents__information-grid mystudents__information-row">
+                    <div class="information__grid-student">
+                        <img src="../images/foto_guleshov.jpg" alt="" class="information__grid-foto">
+                        <div class="information__grid-name">Андрей Гулешов</div>
+                        <div class="information__grid-program">Intermediate, Business English</div>
+                    </div>
+                    <div class="information__grid-lessons">60 из 60</div>
+                    <div class="information__grid-test">
+                        <div class="mystudents__timetable-content">
+                            <img class="mystudents__timetable-icon" src="../images/icon_calendar-minus.svg" alt="">
+                            <!-- <p class="information__test-data">11 Ноября </p> -->
+                            <p class="information__test-balanсe">11 Ноября - 360 из 650 <span
+                                    class="information__test-persent"> (60%)</span></p>
+                        </div>
+                    </div>
+                    <a href="mailto:info@vip.ru"><svg
+                            class="teacher__icon2 admin__icon admin__icon2 information__test-mail" viewBox="0 0 54 54"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M47.25 10.125H6.75C5.85489 10.125 4.99645 10.4806 4.36351 11.1135C3.73058 11.7464 3.375 12.6049 3.375 13.5V40.5C3.375 41.3951 3.73058 42.2535 4.36351 42.8865C4.99645 43.5194 5.85489 43.875 6.75 43.875H47.25C48.1451 43.875 49.0035 43.5194 49.6365 42.8865C50.2694 42.2535 50.625 41.3951 50.625 40.5V13.5C50.625 12.6049 50.2694 11.7464 49.6365 11.1135C49.0035 10.4806 48.1451 10.125 47.25 10.125ZM43.5375 13.5L27 24.9412L10.4625 13.5H43.5375ZM6.75 40.5V15.0356L26.0381 28.3837C26.3206 28.5797 26.6562 28.6847 27 28.6847C27.3438 28.6847 27.6794 28.5797 27.9619 28.3837L47.25 15.0356V40.5H6.75Z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="mystudents__information-line"></div>
+                <div class="mystudents__information-grid mystudents__information-row">
+                    <div class="information__grid-student">
+                        <img src="../images/foto_noskov.jpg" alt="" class="information__grid-foto">
+                        <div class="information__grid-name">Николай Носков</div>
+                        <div class="information__grid-program">Intermediate, Business English</div>
+                    </div>
+                    <div class="information__grid-lessons">27 из 60</div>
+                    <div class="information__grid-test">
+                        <div class="mystudents__timetable-content">
+                            <img class="mystudents__timetable-icon" src="../images/icon_calendar-minus.svg" alt="">
+                            <!-- <p class="information__test-data">11 Ноября </p> -->
+                            <p class="information__test-balanсe">11 Ноября - 360 из 650 <span
+                                    class="information__test-persent"> (60%)</span></p>
+                        </div>
+                    </div>
+                    <a href="mailto:info@vip.ru"><svg
+                            class="teacher__icon2 admin__icon admin__icon2 information__test-mail" viewBox="0 0 54 54"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M47.25 10.125H6.75C5.85489 10.125 4.99645 10.4806 4.36351 11.1135C3.73058 11.7464 3.375 12.6049 3.375 13.5V40.5C3.375 41.3951 3.73058 42.2535 4.36351 42.8865C4.99645 43.5194 5.85489 43.875 6.75 43.875H47.25C48.1451 43.875 49.0035 43.5194 49.6365 42.8865C50.2694 42.2535 50.625 41.3951 50.625 40.5V13.5C50.625 12.6049 50.2694 11.7464 49.6365 11.1135C49.0035 10.4806 48.1451 10.125 47.25 10.125ZM43.5375 13.5L27 24.9412L10.4625 13.5H43.5375ZM6.75 40.5V15.0356L26.0381 28.3837C26.3206 28.5797 26.6562 28.6847 27 28.6847C27.3438 28.6847 27.6794 28.5797 27.9619 28.3837L47.25 15.0356V40.5H6.75Z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="mystudents__information-line"></div>
+            </div>
         </div>
         <div id="modal1" class="modal mystudents__information">
             <div class="modal-content mystudents__information-container">
@@ -731,7 +781,8 @@
                     <div class="information__grid-header information__grid-header1">Студент</div>
                     <div class="information__grid-header information__grid-header2">Баланс уроков</div>
                     <div class="information__grid-header information__grid-header3">Тестирования</div>
-                    <div></div>
+                    <div><img class="modal-close waves-effect waves-green btn-flat" src="../images/icon_close.svg"
+                            alt=""></div>
                 </div>
                 <div class="mystudents__information-line"></div>
                 <div class="mystudents__information-grid mystudents__information-row">
@@ -785,7 +836,6 @@
             </div>
         </div>
     </div>
-
     <script type="text/javascript" src="../script/materialize.min.js"></script>
     <script src="../script/script.js"></script>
 </body>
