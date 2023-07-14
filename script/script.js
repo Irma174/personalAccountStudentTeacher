@@ -7,13 +7,4 @@ document.addEventListener("DOMContentLoaded", function () {
     preventScrolling: false,
   });
 
-  var elems = document.querySelectorAll('.carousel');
-  var inst = M.Carousel.init(elems,{
-    duration: 300,
-    dist: 0,
-    shift: 20,
-    numVisible: 1,
-    fullWidht: true
-  });
 });
-

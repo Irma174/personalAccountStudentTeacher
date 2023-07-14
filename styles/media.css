@@ -19,7 +19,6 @@
 
 @media screen and (max-width: 1024px) {
 
-
     .main {
         width: 100%;
     }
@@ -47,7 +46,8 @@
     .admin__mobile-white6,
     .admin__mobile-transition,
     .news__mobile-time,
-    .events__teacher-none {
+    .events__teacher-none,
+    .events__tradition-mobile {
         display: block;
     }
 
@@ -151,6 +151,8 @@
     .menu__button-red {
         width: 100%;
         margin-bottom: 27px;
+        font-size: 22px;
+        height: 50px;
     }
 
     .menu__button-item3 {
@@ -163,8 +165,7 @@
     }
 
     .events__content-info {
-        margin: 0;
-        text-align: center;
+        margin: 0 auto;
     }
 
     .events__content-name {
@@ -181,6 +182,7 @@
 
     .events__content-text {
         margin: 0 auto;
+        width: 100%;
     }
 
     .events__more-arrow {
@@ -340,6 +342,7 @@
     .events__flex-item {
         margin-bottom: 40px;
         text-align: center;
+        height: 100%;
     }
 
     .admin__item-line,
@@ -384,6 +387,10 @@
         margin-right: 45px;
     }
 
+    .events__tradition-mobile{
+        margin: 0 auto 51px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -411,7 +418,6 @@
 
     .menu__button-item {
         margin-right: 0;
-        font-size: 22px;
         padding: 0;
     }
 
